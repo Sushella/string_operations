@@ -1,0 +1,251 @@
+ <!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Instagram Clone</title>
+  <link rel="stylesheet" href="deepak.css">
+ 
+
+ <!--  Font Awesome for icons 
+
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head> -->
+<!-- <body>
+  <div class="instagram-container">
+    <header class="main-header">
+      <div class="logo">Instagram</div>
+      <div class="actions">
+        <i class="far fa-heart like-btn"></i>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <section class="post">
+        <div class="post-header">
+          <img class="avatar" src="https://unsplash.it/50/50?random=1" alt="User">
+          <span class="username">user_name</span>
+        </div>
+        <img class="post-image" src="https://unsplash.it/400/400?random=2" alt="Post image">
+        <div class="post-actions">
+          <i class="far fa-heart like-btn"></i>
+          <i class="far fa-comment"></i>
+          <i class="far fa-paper-plane"></i>
+        </div>
+        <div class="post-caption"><strong>user_name</strong> A caption goes here.</div>
+      </section>
+    </main>
+  </div>
+  <script src="devans.js"></script>
+</body>
+</html>  -->
+
+
+
+
+<!-- <html>
+
+<head>
+  <title>Document</title>
+  <link rel="stylesheet" href="./deepak.css">
+</head>
+<body>
+  <section id="Type1">
+
+    
+    <div>
+      <button id="i1" onclick="pink()">pink</button>
+    </div>
+    <div>
+      <button id="i2" onclick="crimson()">crimson</button>
+    </div>
+    <div>
+      <button id="i3" onclick="purple()">purple</button>
+    </div>
+
+  </section>
+  <br>
+  <section class="main2">
+    <div id="box7">
+      <button id="i4" onclick="rideg()">pranithya</button>
+    </div>
+    <div id="box5">
+      <button id="i5" onclick="dotted()">nisarga</button>
+    </div>
+    <div id="box6">
+      <button id="i6" onclick="dashed() ">dheeksha</button>
+    </div>
+
+  </section>
+  <br>
+  <section class="main3">
+    <div id="i12">
+      <button id="i7" onclick="pranithya()">Button</button>
+    </div>
+    <div id="i11">
+      <button id="i8" onclick="nisarga()">Button</button>
+    </div>
+    <div id="i10">
+      <button id="i9" onclick="dheeksha() ">Button</button>
+    </div>
+  </section>
+
+  <script src="./devans.js"></script>
+</body>
+
+</html> -->
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>String Analyzer</title>
+
+   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid Example</title>
+  
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 1cm;
+
+      
+    }
+    .container {
+
+      border: 0cap;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1em;
+      max-width: 500px;
+      border-radius: 0ric;
+    }
+    .container input[type="text"] {
+      width: 100%;
+      padding: 0.5em;
+      font-size: 1em;
+    }
+    .container button {
+      grid-column: span 2;
+      padding: 0.7em;
+      font-size: 1em;
+    }
+    .field {
+      display: flex;
+      align-items: center;
+    }
+    .field label {
+      width: 120px;
+      margin-right: 0.5em;
+    }
+    .field .output {
+      flex: 1;
+      padding: 0.5em;
+      background-color: white;
+      font-family: monospace;
+    }
+  </style>
+</head>
+<body>
+ 
+  <div class="container">
+    <div><input type="text" id="inputString"placeholder="Enter a string"> </div>
+    <div><button id="doBtn">Do</button></div>
+    
+
+    <div class="field"><label>Length:</label><div class="output" id="length"></div></div>
+    <div class="field"><label>Uppercase:</label><div class="output" id="uppercase"></div></div>
+    <div class="field"><label>Lower case:</label><div class="output" id="lowercase"></div></div>
+    <div class="field"><label>Middle character:</label><div class="output" id="middle"></div></div>
+    <div class="field"><label>Total words:</label><div class="output" id="words"></div></div>
+    <div class="field"><label>Vowels count:</label><div class="output" id="vowels"></div></div>
+    <div class="field"><label>Consonants:</label><div class="output" id="consonants"></div></div>
+    <div class="field"><label>camelCase:</label><div class="output" id="camelcase"></div></div>
+  </div>
+
+  <script>
+
+  document.getElementById('doBtn').addEventListener('click', () => {
+  const str = document.getElementById('inputString').value;
+  
+
+  const len = str.length;
+  document.getElementById('length').textContent = len;
+  
+
+  document.getElementById('uppercase').textContent = str.toUpperCase();
+  
+
+  document.getElementById('lowercase').textContent = str.toLowerCase();
+  
+ 
+  let middle = 'NA';
+  const wordsArr = str.trim().split(/\s+/).filter(s => s);
+  if (wordsArr.length === 1) {
+    const s = wordsArr[0];
+    if (s.length % 2 === 0) {
+      middle = s.substring(s.length / 2 - 1, s.length / 2 + 1);
+    } else {
+      middle = s.charAt(Math.floor(s.length / 2));
+    }
+  }
+  document.getElementById('middle').textContent = middle;
+  
+  
+  document.getElementById('words').textContent = wordsArr.length;
+  
+ 
+  const vowels = (str.match(/[aeiouAEIOU]/g) || []).length;
+  document.getElementById('vowels').textContent = vowels;
+  
+  
+  const consonants = (str.match(/[bcdfghjklmnpqrstvwxyz]/gi) || []).length;
+  document.getElementById('consonants').textContent = consonants;
+  
+ 
+  const camel = str
+    .trim()
+    .split(/\s+/)
+    .map((w, i) => i === 0 ? w.toLowerCase() : w.charAt(0).toUpperCase() + w.slice(1).toLowerCase())
+    .join('');
+  document.getElementById('camelcase').textContent = camel;
+});
+  </script>
+</body>
+</html> 
+ -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>String Analyzer</title>
+  <link rel="stylesheet" href="deepak.css">
+</head>
+<body>
+  
+  
+  <input type="text" id="inputStr" placeholder="Enter a string">
+  <button onclick="analyzeString()">Check</button>
+
+  <div class="result" id="output"></div>
+
+  <script src="devans.js"></script>
+</body>
+</html>
+
